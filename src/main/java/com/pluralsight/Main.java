@@ -33,9 +33,11 @@ public class Main {
         int pointTwoB = 59;
 
         int distanceX = pointTwoA - pointOneA;
+        System.out.println(distanceX);
         int distanceY = pointTwoB - pointOneB;
-
-        System.out.println("The distance between (" + pointOneA +","+ pointOneB + ") and (" + pointTwoA + "," + pointTwoB + ") is: x="+distanceX+ " and y=" + distanceY);
+        System.out.println(distanceY);
+        System.out.println("The distance between (" + pointOneA +","+ pointOneB + ") and (" + pointTwoA + "," + pointTwoB + ") is: " + Math.sqrt((distanceX * distanceX) + (distanceY * distanceY))); //Interestingly the math output is incorrect here
+        System.out.println(Math.sqrt(80 * 80 + 40 * 40)); //But runs correctly here, and even after checking the values are the same as far as I could tell.
 
         // NEXT
         System.out.println(Math.random()); //Code Reference: Ariel Raymundo
